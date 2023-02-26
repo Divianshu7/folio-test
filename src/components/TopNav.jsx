@@ -4,6 +4,7 @@ import { Box, IconButton, Typography, useMediaQuery, useTheme } from '@mui/mater
 import { styled } from '@mui/system'
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import { setMode } from '../state'
 
 function TopNav() {
@@ -19,6 +20,7 @@ function TopNav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isDown, setIsDown] = useState(true)
     var oldScrollY = window.scrollY
+    const navigate = useNavigate()
     // window.onwheel = e => {
     //     if (e.deltaY > 0) {
     //         setIsDown(false)
@@ -44,7 +46,7 @@ function TopNav() {
     return (
         <Contain position={'sticky'} sx={{ transition: 'all 0.5s ease-in-out 0s', transform: !isDown ? "translate3d(0,-100%,0)" : 'translate3d(0,0,0)' }} >
             <Box justifyContent='space-between' width='100%' display='flex' p='10px 6%' bgcolor={background} flexDirection='row' >
-                <Typography color='red' variant='h2' fontWeight='900'>Portfolio</Typography>
+                <a href='' ><Typography color='red' variant='h2' fontWeight='900'>Portfolio</Typography></a>
                 <Contain>
                     {isDesktop ? (
                         <Contain flexDirection='row!important' gap='1.5rem' fontSize='25px' >

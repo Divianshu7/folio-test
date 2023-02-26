@@ -9,9 +9,23 @@ import Education from './Education'
 import Projects from './Projects'
 import ContactMe from './ContactMe'
 import Footer from '../components/Footer'
+import { Button } from 'antd'
+import { PanToolAlt } from '@mui/icons-material'
 function Home() {
     const [isloading, setLoading] = useState(true)
     const media = useMediaQuery('(min-width:48em)')
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById('btn').style.visibility = "visible"
+        } else {
+            document.getElementById('btn').style.visibility = "hidden"
+
+        }
+    }
+    document.addEventListener("scroll", () => {
+        scrollFunction()
+    })
+
     const welcome = () => (
         <Container
             justifyContent='center'
@@ -25,8 +39,10 @@ function Home() {
     const done = () => (
         <Box>
             <TopNav />
+            <div style={{ visibility: "hidden" }} onClick={() => window.scrollTo(0, 0)} id='btn'><Button type='primary' ><PanToolAlt /></Button></div>
             <Container height={media && '85vh !important'}>
                 <Hello />
+
             </Container>
             <Container>
                 <Skills />
@@ -42,17 +58,25 @@ function Home() {
             <Footer />
         </Box >)
     useEffect(() => {
-        setTimeout(() => setLoading(false), 2000)
+        setTimeout(() => {
+            setLoading(false)
+        }, 2000)
     }, [])
     return (
         <>
             {isloading ? welcome() : done()}
+            {/* {done()} */}
         </>
     )
 }
 const Container = styled(Box)({
     // height: '100vh'
-
+    "#btn": {
+        position: 'sticky',
+        display: 'flex',
+        top: "0",
+        zIndex: "1"
+    }
 
 })
 export default Home
