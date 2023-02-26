@@ -27,7 +27,7 @@ function Intro() {
                     <Socials />
                     <Container marginTop='20px' justifyContent='space-between!important' width='50%' >
                         <Button href='#contact' variant='contained' color='warning' sx={{ fontSize: media ? '1.2vw' : "2.3vw", marginRight: !media && "10px" }}>Contact Me</Button>
-                        <Button onClick={() => window.open("https://drive.google.com/file/d/1CZMFGd5kcQycCxcq1Iz205Dse8vONQQn/view?usp=share_link")} variant='contained' color='warning' sx={{ fontSize: media ? '1.2vw' : "2.5vw" }}>Resume</Button>
+                        <Button onClick={() => window.open("https://drive.google.com/file/d/1p_4VGSEkGoZNtzTP_RULgT9x3SxMoQEZ/view?usp=share_link")} variant='contained' color='warning' sx={{ fontSize: media ? '1.2vw' : "2.5vw" }}>Resume</Button>
                     </Container>
                 </Container>
             </Fade>
