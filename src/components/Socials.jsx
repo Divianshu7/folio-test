@@ -10,7 +10,7 @@ function Socials() {
                 <IconButton onClick={() => window.open("https://github.com/Divianshu7")} className='img3'>
                     <GitHub sx={{ fontSize: '22px', color: 'white' }} />
                 </IconButton>
-                <IconButton onClick={() => ""} className='img4'>
+                <IconButton onClick={() => window.open("https://www.linkedin.com/in/divianshujaswal")} className='img4'>
                     <LinkedIn sx={{ fontSize: '22px', color: 'white' }} />
                 </IconButton>
                 <IconButton onClick={() => window.open("https://www.instagram.com/divianshu_07/")} className='img5'>
