@@ -38,8 +38,8 @@ function Projects() {
             <Typography variant='h2' >Projects</Typography>
             <Box className='grid' width="100%">
                 <Fade bottom duration={1000}>
-                    <div onClick={() => window.open("https://github.com/Divianshu7/Concept-Labs-deploy")}>
-                        <Card h={"developerFolio"} p={"🚀 Software Developer Portfolio Template that showcases my work and skills as a softwate developer  "} j={"93.4%"} c={"2.3%"} ht={"4.3%"} />
+                    <div onClick={() => window.open("https://github.com/Divianshu7/developerFolio")}>
+                        <Card h={"developerFolio"} p={"🚀 Software Developer Portfolio Template that showcases my work and skills as a softwate developer  "} j={"92.2%"} c={"2.7%"} ht={"5.1%"} />
                     </div>
                     <div onClick={() => window.open("https://github.com/Divianshu7/Concept-Labs-deploy")} >
                         <Card h={"Concept-Labs"} p={"🔥 Founded an Edtech startup, teaching 150+ students about CAD modelling software. I made and handled the website along with managing day-to-day operations and developing marketing content for various social media channels."} j={"93.4%"} c={"2.3%"} ht={"4.3%"} />
