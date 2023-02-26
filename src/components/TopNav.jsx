@@ -75,7 +75,7 @@ function TopNav() {
                 <Box display='flex' zIndex='10' borderRadius='30px' bgcolor={background} border='solid 1px grey' flexDirection='column' justifyContent='end' position='absolute' top='55px' right='5px'>
                     <a onClick={() => setIsMenuOpen(false)} href="#skills"><Typography className='tabs' fontWeight='100' variant='h4'>Skills</Typography></a>
                     <a onClick={() => setIsMenuOpen(false)} href="#projects"><Typography className='tabs' fontWeight='100' variant='h4'>Projects</Typography></a>
-                    <a href=""><Typography className='tabs' onClick={() => setIsMenuOpen(false)} fontWeight='100' variant='h4'>Resume</Typography></a>
+                    <a onClick={() => window.open("https://drive.google.com/file/d/1CZMFGd5kcQycCxcq1Iz205Dse8vONQQn/view?usp=share_link")}><Typography className='tabs' onClick={() => setIsMenuOpen(false)} fontWeight='100' variant='h4'>Resume</Typography></a>
                     <a href="#contact"><Typography className='tabs' fontWeight='100' variant='h4' onClick={() => setIsMenuOpen(false)} >Contact Me</Typography></a>
                     <IconButton onClick={() => dispatch(setMode())} >
                         {theme.palette.mode === 'dark' ? (
