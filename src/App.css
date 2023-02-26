@@ -57,5 +57,14 @@ a {
     display: flex;
     top: 90vh;
     margin-left: 80%;
+
+
+
     z-index: 1;
+}
+
+@media screen and (min-width:48em) {
+    #btn {
+        margin-left: 90vw !important;
+    }
 }
