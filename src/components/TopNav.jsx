@@ -50,7 +50,7 @@ function TopNav() {
                 <Contain>
                     {isDesktop ? (
                         <Contain flexDirection='row!important' gap='1.5rem' fontSize='25px' >
-                            <a href="#skills"><Typography className='tabs' fontWeight='100' variant='h4'>Skills</Typography></a>
+                            <a href="#skills"><Typography className='tabs' fontWeight='100' variant='h4'>Skillsd</Typography></a>
                             <a href="#projects"><Typography className='tabs' fontWeight='100' variant='h4'>Projects</Typography></a>
                             <a onClick={() => window.open("https://drive.google.com/file/d/1p_4VGSEkGoZNtzTP_RULgT9x3SxMoQEZ/view?usp=share_link")}><Typography className='tabs' fontWeight='100' variant='h4'>Resume</Typography></a>
                             <a href="#contact"><Typography className='tabs' fontWeight='100' variant='h4'>Contact Me</Typography></a>
